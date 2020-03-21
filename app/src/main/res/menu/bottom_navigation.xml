@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/BusNo"
+        android:title="BusNumber"
+        android:icon="@drawable/ic_bus_no"/>
+
+
+    <item android:id="@+id/Timings"
+        android:title="Timings"
+        android:icon="@drawable/ic_bus_timings"/>
+
+    <item android:id="@+id/Route"
+        android:title="Route"
+        android:icon="@drawable/ic_bus_route"/>
+
+    <item android:id="@+id/Stage"
+        android:title="Stage"
+        android:icon="@drawable/ic_bus_stage"/>
+
+</menu>

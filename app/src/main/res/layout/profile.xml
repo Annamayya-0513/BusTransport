@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/BackarrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Toolbar"
+        app:layout_constraintStart_toStartOf="@+id/Toolbar"
+        app:layout_constraintTop_toTopOf="@+id/Toolbar"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/ProfileTxtView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:gravity="center|start"
+        android:textStyle="bold"
+        android:textColor="@color/white_color"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BackarrowImageView"
+        app:layout_constraintTop_toTopOf="@+id/Toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar"
+        app:layout_constraintVertical_bias="0.054">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_color">
+
+
+                    <ImageView
+                        android:id="@+id/EmailImageView"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_gmail" />
+
+                    <TextView
+                        android:id="@+id/RachUsTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="28dp"
+                        android:gravity="left"
+                        android:text="Reach Us"
+                        android:textColor="@color/black_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/EmailImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/Blackgradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/black_gradient"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/RachUsTxtView" />
+
+                    <ImageView
+                        android:id="@+id/RateImageView"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient"
+                        app:srcCompat="@drawable/ic_rating" />
+
+                    <TextView
+                        android:id="@+id/RateTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Rate App"
+                        android:textColor="@color/black_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/RateImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/Blackgradient2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/black_gradient"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/RateTxtView" />
+
+                    <ImageView
+                        android:id="@+id/ShareImageView"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient2"
+                        app:srcCompat="@drawable/ic_share" />
+
+                    <TextView
+                        android:id="@+id/ShareTxtview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Share App"
+                        android:textColor="@color/black_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ShareImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient2" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/Blackgradient3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/black_gradient"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ShareTxtview" />
+
+                    <ImageView
+                        android:id="@+id/AboutImageView"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient3"
+                        app:srcCompat="@drawable/ic_question" />
+
+                    <TextView
+                        android:id="@+id/AboutTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12dp"
+                        android:text="About Us"
+                        android:textColor="@color/black_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/AboutImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient3" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/Blackgradient4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/black_gradient"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/AboutTxtView" />
+
+                    <ImageView
+                        android:id="@+id/TermsofServiceImageView"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient4"
+                        app:srcCompat="@drawable/ic_mobile_service" />
+
+                    <TextView
+                        android:id="@+id/TermsofServiceTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Terms Of Service"
+                        android:textColor="@color/black_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/TermsofServiceImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient4" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/Blackgradient5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/black_gradient"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TermsofServiceTxtView" />
+
+                    <ImageView
+                        android:id="@+id/PrivacyPolicyImageView"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient5"
+                        app:srcCompat="@drawable/ic_privacy_policy" />
+
+                    <TextView
+                        android:id="@+id/PrivacyPolicyTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/black_color"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/PrivacyPolicyImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/Blackgradient5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
